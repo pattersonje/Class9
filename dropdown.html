@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>CSS List Styles</title>
+</head>
+	<body>
+		<ul class="nav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About &#x25BC;</a>
+				<ul class="sub-menu">
+					<li><a href="#">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#">Three</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="work.html">Work &#x25BC;</a>
+				<ul class="sub-menu">
+					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+
+		<style type="text/css">
+			
+
+			ul.nav li {
+				float:left;
+				list-style: none;
+				position:relative;
+			}
+			ul.nav li:hover ul.sub-menu {
+				display:block;
+			}
+			ul.nav li a {
+				padding: 20px;
+				background-color: tomato;
+				color: white;
+				display: block;
+				text-decoration: none;
+			}
+			ul.nav li a:hover {
+				background-color: rebeccapurple;
+			}
+			ul.sub-menu {
+				display:none;
+				position:absolute;
+				top:100%;
+				left:0;
+				right:0;
+				padding:0;
+			}
+			ul.sub-menu li {
+				float:none;
+			}
+			ul.sub-menu li a:hover {
+				background-color: rebeccapurple;
+			}
+			ul.sub-menu li a {
+				background-color: indigo;
+			}
+		</style>
+	</body>
+</html>
